@@ -182,12 +182,73 @@
       });
     }
 
-    fetchJSON('data/event.json').then(applyEvent).catch(function () {});
+    fetchJSON('data/event.json')
+      .then(applyEvent)
+      .catch(function () {})
+      .finally(function () { initRouter(); });
     fetchJSON('data/speakers.json').then(renderSpeakers).catch(function () {});
     fetchJSON('data/schedule.json').then(renderSchedule).catch(function () {});
     fetchJSON('data/sponsors.json').then(renderSponsors).catch(function () {});
     fetchJSON('data/slides.json').then(renderSlides).catch(function () {});
   });
+
+  /**
+   * Hash-based router. Routes:
+   *   #/              → home (hero + all sections visible, single-page mode)
+   *   #/about         → only the About section
+   *   #/speakers      → only the Speakers section
+   *   #/schedule, #/slides, #/photos, #/sponsors → idem
+   *
+   * Legacy `#section` anchors are upgraded to `#/section` so old links work.
+   */
+  var ROUTES = ['home', 'about', 'speakers', 'schedule', 'slides', 'photos', 'sponsors'];
+
+  function parseRoute() {
+    var raw = (window.location.hash || '').replace(/^#\/?/, '').toLowerCase();
+    if (!raw) return 'home';
+    if (ROUTES.indexOf(raw) >= 0) return raw;
+    return 'home';
+  }
+
+  function applyRoute(route) {
+    var wraps = document.querySelectorAll('[data-section-wrap]');
+    wraps.forEach(function (el) {
+      var key = el.getAttribute('data-section-wrap');
+      // If a section was disabled by event.json it already has display:none — leave it alone.
+      if (el.dataset.disabledByConfig === 'true') return;
+      if (route === 'home') {
+        el.hidden = false;
+      } else {
+        el.hidden = (key !== route);
+      }
+    });
+    document.querySelectorAll('.primary-nav [data-section]').forEach(function (a) {
+      if (a.getAttribute('data-section') === route) {
+        a.setAttribute('aria-current', 'page');
+      } else {
+        a.removeAttribute('aria-current');
+      }
+    });
+    // Reset scroll on route change (but not on initial home load).
+    if (route !== 'home') window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+  }
+
+  function initRouter() {
+    // Upgrade legacy anchors (#about → #/about) and mark config-disabled sections.
+    var hash = window.location.hash || '';
+    if (hash && hash.charAt(1) !== '/' && hash !== '#top') {
+      var legacy = hash.slice(1).toLowerCase();
+      if (ROUTES.indexOf(legacy) >= 0) {
+        history.replaceState(null, '', '#/' + legacy);
+      }
+    }
+    document.querySelectorAll('[data-section-wrap]').forEach(function (el) {
+      if (el.style.display === 'none') el.dataset.disabledByConfig = 'true';
+    });
+
+    window.addEventListener('hashchange', function () { applyRoute(parseRoute()); });
+    applyRoute(parseRoute());
+  }
 
   function renderSlides(list) {
     var el = document.querySelector('[data-slides]');

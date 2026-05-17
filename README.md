@@ -138,6 +138,25 @@ npx serve .
    Office Online viewer — requires the file to be publicly reachable, which it
    is on GitHub Pages).
 
+## Routing
+
+The site uses lightweight **hash-based routes** so each section behaves like its
+own page while keeping a single static deployment (works on GitHub Pages without
+any redirect/rewrite tricks):
+
+| Route          | What you see                              |
+| -------------- | ----------------------------------------- |
+| `#/` (home)    | Hero + every enabled section (single page)|
+| `#/about`      | About only                                |
+| `#/speakers`   | Speakers only                             |
+| `#/schedule`   | Schedule only                             |
+| `#/slides`     | Slides only                               |
+| `#/photos`     | Photo gallery only                        |
+| `#/sponsors`   | Sponsors only                             |
+
+Legacy anchors like `#speakers` are automatically upgraded to `#/speakers`,
+and the active route is highlighted in the nav via `aria-current="page"`.
+
 ## Theming
 
 Themes live in [`assets/css/themes.css`](assets/css/themes.css). The switcher

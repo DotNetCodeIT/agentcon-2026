@@ -27,17 +27,18 @@
 
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="#top" data-event-brand-aria aria-label="Home">
+      <a class="brand" href="#/" data-event-brand-aria aria-label="Home">
         <span class="brand-mark" aria-hidden="true">&#9876;</span>
         <span class="brand-text" data-event-brand></span>
       </a>
       <nav class="primary-nav" aria-label="Primary">
-        <a href="#about" data-section="about">About</a>
-        <a href="#speakers" data-section="speakers">Speakers</a>
-        <a href="#schedule" data-section="schedule">Schedule</a>
-        <a href="#slides" data-section="slides">Slides</a>
-        <a href="#photos" data-section="photos">Photos</a>
-        <a href="#sponsors" data-section="sponsors">Sponsors</a>
+        <a href="#/" data-section="home">Home</a>
+        <a href="#/about" data-section="about">About</a>
+        <a href="#/speakers" data-section="speakers">Speakers</a>
+        <a href="#/schedule" data-section="schedule">Schedule</a>
+        <a href="#/slides" data-section="slides">Slides</a>
+        <a href="#/photos" data-section="photos">Photos</a>
+        <a href="#/sponsors" data-section="sponsors">Sponsors</a>
       </nav>
       <div class="theme-switcher" role="group" aria-label="Theme">
         <button type="button" class="mode-toggle" data-mode-toggle aria-label="Toggle light/dark mode">
@@ -58,7 +59,7 @@
   </header>
 
   <main id="main">
-    <section id="top" class="hero">
+    <section id="top" class="hero" data-section-wrap="home">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
         <p class="eyebrow" data-event-eyebrow></p>
@@ -73,8 +74,8 @@
           <li><strong>Where</strong> <span data-event-where></span></li>
         </ul>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#photos">View photos</a>
-          <a class="btn btn-ghost" href="#schedule">See schedule</a>
+          <a class="btn btn-primary" href="#/photos">View photos</a>
+          <a class="btn btn-ghost" href="#/schedule">See schedule</a>
         </div>
         <div class="hero-stats">
           <div><span data-stat="photos">—</span><small>photos</small></div>
