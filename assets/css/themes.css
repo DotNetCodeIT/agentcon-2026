@@ -1,0 +1,65 @@
+/* Theme tokens: light/dark base + swappable accent palettes. */
+:root {
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, .15);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, .25);
+  --max-w: 1180px;
+}
+
+/* Light mode (default surfaces). */
+:root,
+html[data-theme="light"] {
+  --bg: #f7f7fb;
+  --bg-elev: #ffffff;
+  --bg-alt: #eef0f7;
+  --fg: #131421;
+  --fg-muted: #535670;
+  --border: #e3e5ef;
+  --overlay: rgba(15, 16, 30, .55);
+}
+
+/* Dark mode. */
+html[data-theme="dark"] {
+  --bg: #0b0c14;
+  --bg-elev: #14162a;
+  --bg-alt: #1a1d36;
+  --fg: #f3f4ff;
+  --fg-muted: #a7abcb;
+  --border: #262a48;
+  --overlay: rgba(4, 5, 12, .75);
+}
+
+/* Accent palettes. Pick one with [data-accent="..."] on <html>. */
+html[data-accent="purple"] {
+  --accent: #7c5cff;
+  --accent-2: #b14bff;
+  --accent-contrast: #ffffff;
+  --hero-grad: radial-gradient(1200px 600px at 10% 0%, rgba(124, 92, 255, .35), transparent 60%),
+               radial-gradient(900px 500px at 100% 20%, rgba(177, 75, 255, .25), transparent 60%);
+}
+html[data-accent="teal"] {
+  --accent: #1ec8b0;
+  --accent-2: #00a3ff;
+  --accent-contrast: #06231f;
+  --hero-grad: radial-gradient(1200px 600px at 10% 0%, rgba(30, 200, 176, .30), transparent 60%),
+               radial-gradient(900px 500px at 100% 20%, rgba(0, 163, 255, .22), transparent 60%);
+}
+html[data-accent="blue"] {
+  --accent: #4c8bff;
+  --accent-2: #6e5cff;
+  --accent-contrast: #ffffff;
+  --hero-grad: radial-gradient(1200px 600px at 10% 0%, rgba(76, 139, 255, .32), transparent 60%),
+               radial-gradient(900px 500px at 100% 20%, rgba(110, 92, 255, .22), transparent 60%);
+}
+html[data-accent="orange"] {
+  --accent: #ff7a45;
+  --accent-2: #ffb648;
+  --accent-contrast: #221002;
+  --hero-grad: radial-gradient(1200px 600px at 10% 0%, rgba(255, 122, 69, .32), transparent 60%),
+               radial-gradient(900px 500px at 100% 20%, rgba(255, 182, 72, .22), transparent 60%);
+}

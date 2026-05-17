@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-15",
+  "items": [
+    { "time": "09:30", "title": "Empowering Developers with Next-Gen AI",                                                         "speaker": "Lee Stott",                              "room": "Room 1" },
+    { "time": "10:30", "title": "Build and launch AI Agents fast with Microsoft Foundry Toolkit for VS Code",                     "speaker": "Carlotta Castelluccio",                  "room": "Room 1" },
+    { "time": "10:30", "title": "Costruire e orchestrare sistemi multi-agent con Microsoft Agent Framework",                      "speaker": "Alessandro Mengoli",                     "room": "Room 2" },
+    { "time": "11:30", "title": "Realizzare agenti per il mondo Microsoft 365: da Agent Builder a Agent 365",                     "speaker": "Lorenzo Barbieri",                       "room": "Room 1" },
+    { "time": "12:30", "title": "Lunch",                                                                                          "type":    "break" },
+    { "time": "13:30", "title": "GitHub Agentic Workflows: Continuous AI per la manutenzione del software che non dorme mai",     "speaker": "Giulio Sciarappa",                       "room": "Room 1" },
+    { "time": "13:30", "title": "Automatizzare la Compliance di Azure Firewall con gli SRE Agent",                                "speaker": "Martina Mangione, Elisa Anzelmo",        "room": "Room 2" },
+    { "time": "14:30", "title": "Building Robust Agentic Retrieval Systems: From Tokens to Trustworthy Knowledge",                "speaker": "Gianmario Spacagna",                     "room": "Room 1" },
+    { "time": "14:30", "title": "Agentic AI senza catene: entra nel Microsoft Agent Framework",                                   "speaker": "Maurizio Moriconi",                      "room": "Room 2" },
+    { "time": "15:30", "title": "Break",                                                                                          "type":    "break" },
+    { "time": "15:45", "title": "TypeAgent: From RAG to Structured RAG — Long-Context, Precise, and Fast AI Systems",             "speaker": "Bernhard Merkle",                        "room": "Room 1" },
+    { "time": "15:45", "title": "Coding a Multi-Agent Game Master with Strands Agents",                                           "speaker": "Tiffany Souterre",                       "room": "Room 2" },
+    { "time": "16:30", "title": "Designing Deterministic Agents Around Non-Deterministic LLMs",                                   "speaker": "Sepehr Samadi",                          "room": "Room 1" },
+    { "time": "16:30", "title": "Next-Gen AI Assistants: Open, Interoperable, Extensible with WayFlow",                           "speaker": "Corrado De Bari",                        "room": "Room 2" },
+    { "time": "17:00", "title": "Llamas and Lobsters — Connecting the Agent Internet Without Getting Pinched",                    "speaker": "Richard Brough",                         "room": "Room 1" },
+    { "time": "17:00", "title": "ARC-AGI and the Road to General Intelligence: Levels, Benchmarks, and Approaches",               "speaker": "Lorenzo Satta Chiris",                   "room": "Room 2" },
+    { "time": "17:30", "title": "Orchestrating AI Agents in Spec-Driven Development with Kiro IDE",                               "speaker": "Haim Michael",                           "room": "Room 1" }
+  ]
+}

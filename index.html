@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-accent="purple">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-event-title>Event</title>
+  <meta name="description" data-event-meta-desc content="" />
+  <meta property="og:title" data-event-og-title content="" />
+  <meta property="og:description" data-event-og-desc content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" data-event-og-image content="assets/img/og.png" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/themes.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>
+    // Apply persisted theme as early as possible to avoid flash.
+    (function () {
+      try {
+        var t = localStorage.getItem('ac-theme'); if (t) document.documentElement.dataset.theme = t;
+        var a = localStorage.getItem('ac-accent'); if (a) document.documentElement.dataset.accent = a;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" data-event-brand-aria aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">&#9876;</span>
+        <span class="brand-text" data-event-brand></span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#about" data-section="about">About</a>
+        <a href="#speakers" data-section="speakers">Speakers</a>
+        <a href="#schedule" data-section="schedule">Schedule</a>
+        <a href="#slides" data-section="slides">Slides</a>
+        <a href="#photos" data-section="photos">Photos</a>
+        <a href="#sponsors" data-section="sponsors">Sponsors</a>
+      </nav>
+      <div class="theme-switcher" role="group" aria-label="Theme">
+        <button type="button" class="mode-toggle" data-mode-toggle aria-label="Toggle light/dark mode">
+          <span class="icon-sun" aria-hidden="true">&#9728;</span>
+          <span class="icon-moon" aria-hidden="true">&#9790;</span>
+        </button>
+        <div class="accent-picker" role="group" aria-label="Accent color">
+          <button type="button" class="swatch" data-accent="purple" aria-label="Purple accent"></button>
+          <button type="button" class="swatch" data-accent="teal" aria-label="Teal accent"></button>
+          <button type="button" class="swatch" data-accent="blue" aria-label="Blue accent"></button>
+          <button type="button" class="swatch" data-accent="orange" aria-label="Orange accent"></button>
+        </div>
+      </div>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow" data-event-eyebrow></p>
+        <h1>
+          <span data-event-title-before></span>
+          <span class="accent" data-event-title-accent></span>
+          <span data-event-title-after></span>
+        </h1>
+        <p class="lead" data-event-lead></p>
+        <ul class="hero-meta">
+          <li><strong>When</strong> <span data-event-when></span></li>
+          <li><strong>Where</strong> <span data-event-where></span></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#photos">View photos</a>
+          <a class="btn btn-ghost" href="#schedule">See schedule</a>
+        </div>
+        <div class="hero-stats">
+          <div><span data-stat="photos">—</span><small>photos</small></div>
+          <div><span data-stat="speakers">—</span><small>speakers</small></div>
+          <div><span data-stat="sessions">—</span><small>sessions</small></div>
+          <div><span data-stat="slides">—</span><small>slides</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" data-section-wrap="about">
+      <div class="container narrow">
+        <h2>About the event</h2>
+        <div data-event-about></div>
+      </div>
+    </section>
+
+    <section id="speakers" class="section section-alt" data-section-wrap="speakers">
+      <div class="container">
+        <h2>Speakers</h2>
+        <p class="section-lead">The voices behind <span data-event-short></span>.</p>
+        <div class="grid speakers-grid" data-speakers></div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section" data-section-wrap="schedule">
+      <div class="container">
+        <h2>Schedule</h2>
+        <p class="section-lead">Sessions across the day.</p>
+        <div class="schedule" data-schedule></div>
+      </div>
+    </section>
+
+    <section id="slides" class="section" data-section-wrap="slides">
+      <div class="container">
+        <div class="section-head">
+          <h2>Speaker slides</h2>
+          <p class="section-lead"><span data-stat="slides">—</span> decks shared by speakers. Download the PDF or open online.</p>
+        </div>
+        <div class="slides-grid" data-slides aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="photos" class="section section-alt" data-section-wrap="photos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Photo gallery</h2>
+          <p class="section-lead"><span data-stat="photos">—</span> moments from the day. Click any photo to enlarge.</p>
+        </div>
+        <div class="gallery" data-gallery aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section" data-section-wrap="sponsors">
+      <div class="container">
+        <h2>Made possible by</h2>
+        <div class="sponsors" data-sponsors></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span data-year></span> <span data-event-short></span>. Organized by the community.</p>
+      <p class="muted" data-event-footer-extra></p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" data-lightbox aria-label="Photo viewer">
+    <button class="lb-close" data-lb-close aria-label="Close">&times;</button>
+    <button class="lb-prev" data-lb-prev aria-label="Previous photo">&lsaquo;</button>
+    <img class="lb-img" alt="" />
+    <button class="lb-next" data-lb-next aria-label="Next photo">&rsaquo;</button>
+    <p class="lb-caption" data-lb-caption></p>
+  </dialog>
+
+  <dialog class="slide-viewer" data-slide-viewer aria-label="Slide deck viewer">
+    <header class="sv-header">
+      <h3 class="sv-title" data-sv-title>Slides</h3>
+      <div class="sv-actions">
+        <a class="btn btn-ghost btn-sm" data-sv-download download>Download</a>
+        <a class="btn btn-ghost btn-sm" data-sv-open target="_blank" rel="noopener">Open in tab</a>
+        <button type="button" class="btn btn-ghost btn-sm" data-sv-close aria-label="Close">Close</button>
+      </div>
+    </header>
+    <iframe title="Slide viewer" allow="fullscreen" src="about:blank"></iframe>
+  </dialog>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

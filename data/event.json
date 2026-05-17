@@ -1,0 +1,32 @@
+{
+  "name": "AgentCon Rome 2026",
+  "shortName": "AgentCon Rome",
+  "tagline": "One day. Real builders. Real agents.",
+  "description": "A recap of the AI Agents conference held in Rome — talks, photos and the people who made it happen.",
+  "eyebrow": "Part of the AgentCon World Tour",
+  "titleParts": { "before": "AgentCon", "accent": "Rome", "after": "2026" },
+  "date": "Friday, 15 May 2026",
+  "time": "09:00 – 17:00 CET",
+  "venue": "Woliba",
+  "address": "Via Serafico 89-91, 00142 Rome, Italy",
+  "ogImage": "assets/img/og.png",
+  "repoUrl": "https://github.com/DotNetCodeIT/agentcon-2026",
+  "parentEvent": { "name": "AgentCon World Tour", "url": "https://agentcon.dev/" },
+  "organizers": [
+    { "name": "Global AI Rome", "url": "https://globalai.community/chapters/rome/" },
+    { "name": "DotNetCode", "url": "https://www.dotnetcode.it/" }
+  ],
+  "aboutHtml": [
+    "AgentCon is a global series of one-day conferences for developers building the future with AI agents. From San Francisco to Bangkok, AgentCon brings together engineers, researchers and creators to explore the cutting edge of AI agent design, deployment and integration.",
+    "The Rome edition was hosted by the <a href=\"https://globalai.community/chapters/rome/\" rel=\"noopener\">Global AI Rome</a> community in collaboration with <a href=\"https://www.dotnetcode.it/\" rel=\"noopener\">DotNetCode</a> and friends."
+  ],
+  "theme": { "mode": "dark", "accent": "purple" },
+  "sections": {
+    "about": true,
+    "speakers": true,
+    "schedule": true,
+    "slides": true,
+    "photos": true,
+    "sponsors": true
+  }
+}

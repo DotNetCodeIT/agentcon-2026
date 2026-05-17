@@ -1,0 +1,18 @@
+[
+  { "name": "Elisa Anzelmo",          "title": "The ultimate use of power is to empower others",                                  "photo": "https://sessionize.com/image/d08d-400o400o1-ShbtfrahYfJY2KgwwLHAvp.jpg" },
+  { "name": "Richard Brough",         "title": "Chief Technology Officer, Blue Beck Ltd",                                          "photo": "https://sessionize.com/image/c8a6-400o400o1-DyBFTJm1XLuNDwAFiCP3N7.jpg" },
+  { "name": "Lorenzo Barbieri",       "title": "Cloud & AI Solutions Architect, Speaker, Author",                                  "photo": "https://sessionize.com/image/47d3-400o400o1-a5-1657-4f34-bcc6-a8dc9467d6ce.e435a090-959e-4c85-a13f-7c28302206af.jpg" },
+  { "name": "Haim Michael",           "title": "Software Developer | Trainer | Consultant",                                        "photo": "https://sessionize.com/image/ff78-400o400o1-JHhbLhS2qtq6gV8qDvf1Hy.png" },
+  { "name": "Lee Stott",              "title": "Principal Cloud Advocate Manager, Microsoft",                                     "photo": "https://sessionize.com/image/b3e2-400o400o1-QbJQszYEzhbqRKxFWmxhPA.jpg" },
+  { "name": "Martina Mangione",       "title": "Technology Consultant @ Microsoft",                                                "photo": "https://sessionize.com/image/a7b7-400o400o1-WaLMmipBmi6N8Q8jESZYji.png" },
+  { "name": "Carlotta Castelluccio",  "title": "Cloud Developer Advocate @ Microsoft",                                             "photo": "https://sessionize.com/image/7563-400o400o1-Um8tbcey6E49iZjDZPLQsF.jpg" },
+  { "name": "Sepehr Samadi",          "title": "Senior Software Engineer, Metacore Games",                                         "photo": "https://sessionize.com/image/fda3-400o400o1-PpD7sakvw7Y8NCjCun3ScC.jpg" },
+  { "name": "Gianmario Spacagna",     "title": "AI Engineering Leader and Venture Builder @ Gravity Break",                        "photo": "https://sessionize.com/image/29d7-400o400o1-Qat3zCzCoMK7pgJoRU23wn.jpg" },
+  { "name": "Lorenzo Satta Chiris",   "title": "Director of Excode",                                                               "photo": "https://sessionize.com/image/a704-400o400o1-wwuvbMaPyJT2zK2MaRxmWU.jpg" },
+  { "name": "Bernhard Merkle",        "title": "Gen AI, ML, Cloud, MS MVP",                                                        "photo": "https://sessionize.com/image/5596-400o400o1-ngZMuZWtM9YohdpJjaiJbm.jpg" },
+  { "name": "Maurizio Moriconi",      "title": "CTO, Mobilesoft",                                                                  "photo": "https://sessionize.com/image/dd91-400o400o1-f1YmMY5uDdmjRuhKReg5Xo.jpg" },
+  { "name": "Tiffany Souterre",       "title": "Senior Developer Advocate @ AWS",                                                  "photo": "https://sessionize.com/image/11ae-400o400o1-024af413-0c10-453f-9f83-f7b7365aa8fc.jpg" },
+  { "name": "Giulio Sciarappa",       "title": "Enterprise Architect, Head of Azure & AI",                                         "photo": "https://sessionize.com/image/fe92-400o400o1-Bv46mWRJnrWdYAeSWeHUoM.jpg" },
+  { "name": "Alessandro Mengoli",     "title": "Technical Leader @ SACMI",                                                         "photo": "https://sessionize.com/image/a2c9-400o400o1-LuozGxmoV1DBhcoKmqKwCo.jpg" },
+  { "name": "Corrado De Bari",        "title": "Developer Evangelist, Microservices & AI, Oracle Database",                       "photo": "https://sessionize.com/image/5bde-400o400o1-EhqMt46mQy5KFoZr9w5CcV.jpg" }
+]
