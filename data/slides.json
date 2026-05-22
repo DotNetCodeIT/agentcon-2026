@@ -1,3 +1,52 @@
 [
-  
+  {
+    "title": "Empowering Developers with Next-Gen AI",
+    "speaker": "Lee Stott",
+    "file": "slides/Lee_Stott_Agentcon_ROME.pdf"
+  },
+  {
+    "title": "Costruire e orchestrare sistemi multi-agent con Microsoft Agent Framework",
+    "speaker": "Alessandro Mengoli",
+    "file": "slides/05_Alessandro_Mengoli_Costruire_e_orchestrare_sistemi_multi_agent_con_Microsoft_Ag.pptx"
+  },
+  {
+    "title": "GitHub Agentic Workflows: Continuous AI per la manutenzione del software che non dorme mai",
+    "speaker": "Giulio Sciarappa",
+    "file": "slides/09_Giulio_Sciarappa_GitHub_Agentic_Workflows_Continuous_AI_per_la_manutenzione_d.pdf"
+  },
+  {
+    "title": "Automatizzare la Compliance di Azure Firewall con gli SRE Agent",
+    "speaker": "Martina Mangione, Elisa Anzelmo",
+    "file": "slides/10_Martina_Mangione_Automatizzare_la_Compliance_di_Azure_Firewall_con_gli_SRE_Ag.pdf"
+  },
+  {
+    "title": "Agentic AI senza catene: entra nel Microsoft Agent Framework",
+    "speaker": "Maurizio Moriconi",
+    "file": "slides/15_Maurizio_Moriconi_Agentic_AI_senza_catene_entra_nel_Microsoft_Agent_Framework.pdf"
+  },
+  {
+    "title": "Coding a Multi-Agent Game Master with Strands Agents",
+    "speaker": "Tiffany Souterre",
+    "file": "slides/Tiffany_Souterre_AgentCon.pptx"
+  },
+  {
+    "title": "Designing Deterministic Agents Around Non-Deterministic LLMs",
+    "speaker": "Sepehr Samadi",
+    "file": "slides/07_Sepehr_Samadi_Designing_Deterministic_Agents_Around_Non_Deterministic_LLMs.pdf"
+  },
+  {
+    "title": "Next-Gen AI Assistants: Open, Interoperable, Extensible with WayFlow",
+    "speaker": "Corrado De Bari",
+    "file": "slides/08_Corrado_De_Bari_Next_Gen_AI_Assistants_Open_Interoperable_Extensible_with_Wa_for_agent_DISTR.pdf"
+  },
+  {
+    "title": "Llamas and Lobsters — Connecting the Agent Internet Without Getting Pinched",
+    "speaker": "Richard Brough",
+    "file": "slides/Richard_Brough_Llamas_and_Lobsters_Connecting_the_Agent_Internet.pdf"
+  },
+  {
+    "title": "Orchestrating AI Agents in Spec-Driven Development with Kiro IDE",
+    "speaker": "Haim Michael",
+    "file": "slides/Haim_Michael_Orchestrating_AI_Agents_in_Spec_Driven_Development_with_Kiro.pdf"
+  }
 ]
